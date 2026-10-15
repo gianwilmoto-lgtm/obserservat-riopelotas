@@ -1,0 +1,12 @@
+# Deployment of the existing Next.js application; keep server routes intact.
+# Netlify automatically installs its Next.js/OpenNext adapter for this framework.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "24"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# No Supabase variables are needed for the public demonstration.
+# Do not configure a static export or publish only the public/ directory.

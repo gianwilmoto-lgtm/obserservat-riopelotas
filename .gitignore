@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+__pycache__/
+test-results/
+playwright-report/
+data/imports/
+.netlify/
+.vercel/
